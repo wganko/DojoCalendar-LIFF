@@ -247,8 +247,7 @@
 
     <script>
         const CONFIG = {
-            // TODO: 一斉送信用に発行した LIFF ID へ置き換える
-            LIFF_ID: 'SET_BROADCAST_LIFF_ID',
+            LIFF_ID: '2008895004-3ZGY5wPE',
             SUPER_ADMINS: ['U80cae55bf31e8b90a6bb2aa9588ba1b7'],
             ADMINS: {
                 i: ['U80cae55bf31e8b90a6bb2aa9588ba1b7'],
@@ -285,7 +284,7 @@
                 document.getElementById('sendBtn').disabled = true;
                 showStatus('管理者確認中...', 'info');
 
-                if (!CONFIG.LIFF_ID || CONFIG.LIFF_ID === 'SET_BROADCAST_LIFF_ID') {
+                if (!CONFIG.LIFF_ID) {
                     throw new Error('broadcast.html の LIFF_ID が未設定です。');
                 }
 
