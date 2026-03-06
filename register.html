@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>竹号登録へ移動中...</title>
+    <script charset="utf-8" src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: #f4f4f4;
+            color: #333;
+        }
+
+        .loader-container {
+            text-align: center;
+            padding: 24px;
+        }
+
+        .loader {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #d4af37;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="loader-container">
+        <div class="loader"></div>
+        <p>竹号登録フォームへ移動しています...<br>少々お待ちください</p>
+    </div>
+
+    <script>
+        const CONFIG = {
+            FORM_URL: 'https://docs.google.com/forms/d/e/1FAIpQLSePa00BAeVhlcUi2fzlAR_XQAfjIASB_BCTHgHoaK8tgqTmtA/viewform',
+            ENTRY_USER_ID: 'entry.1479433199',
+            ENTRY_LINE_NAME: 'entry.1566207293',
+            // TODO: 竹号登録用 LIFF ID に置き換える
+            LIFF_ID: 'SET_REGISTER_LIFF_ID'
+        };
+
+        async function init() {
+            try {
+                if (!CONFIG.LIFF_ID || CONFIG.LIFF_ID === 'SET_REGISTER_LIFF_ID') {
+                    throw new Error('register.html の LIFF_ID が未設定です。');
+                }
+
+                await liff.init({ liffId: CONFIG.LIFF_ID });
+
+                if (!liff.isLoggedIn()) {
+                    liff.login();
+                    return;
+                }
+
+                const profile = await liff.getProfile();
+                const params = new URLSearchParams();
+                params.append('usp', 'pp_url');
+                params.append(CONFIG.ENTRY_USER_ID, profile.userId);
+                params.append(CONFIG.ENTRY_LINE_NAME, profile.displayName);
+
+                window.location.replace(`${CONFIG.FORM_URL}?${params.toString()}`);
+            } catch (error) {
+                console.error('LIFF Error:', error);
+                document.querySelector('.loader').style.display = 'none';
+                document.querySelector('.loader-container p').innerHTML =
+                    `<span style="color:#c94a45;">エラーが発生しました</span><br>` +
+                    `<small style="display:block;margin-top:10px;color:#666;">${error.message || error}</small>`;
+            }
+        }
+
+        init();
+    </script>
+</body>
+
+</html>
