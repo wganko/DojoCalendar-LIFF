@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>連絡フォームへ移動中...</title>
+    <script charset="utf-8" src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: #f4f4f4;
+            color: #333;
+        }
+
+        .loader-container {
+            text-align: center;
+        }
+
+        .loader {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #d4af37;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="loader-container">
+        <div class="loader"></div>
+        <p>連絡フォームへ移動しています...<br>少々お待ちください</p>
+    </div>
+
+    <script>
+        // 設定: GoogleフォームのベースURLとエントリーID
+        const CONFIG = {
+            FORM_URL: 'https://docs.google.com/forms/d/e/1FAIpQLSf3NdMJJ4mKsT6parxWrF3jh32gxCp1TLs60xBaz1adqMe9ww/viewform',
+            ENTRY_USER_ID: 'entry.1359721803',
+            ENTRY_LINE_NAME: 'entry.1757077259',
+            LIFF_ID: '2008908168-U8QTq3sl' // 新しい固有のLIFF ID
+        };
+
+        async function init() {
+            try {
+                await liff.init({ liffId: CONFIG.LIFF_ID });
+
+                if (!liff.isLoggedIn()) {
+                    liff.login();
+                    return;
+                }
+
+                // ユーザープロフィール取得
+                const profile = await liff.getProfile();
+                const userId = profile.userId;
+                const displayName = profile.displayName;
+
+                // フォームURL組み立て
+                const params = new URLSearchParams();
+                params.append('usp', 'pp_url');
+                params.append(CONFIG.ENTRY_USER_ID, userId);
+                params.append(CONFIG.ENTRY_LINE_NAME, displayName);
+
+                const finalUrl = `${CONFIG.FORM_URL}?${params.toString()}`;
+
+                // リダイレクト
+                window.location.replace(finalUrl);
+
+            } catch (error) {
+                console.error('LIFF Error:', error);
+                const statusText = document.querySelector('.loader-container p');
+                statusText.innerHTML = `<span style="color: #f87171;">エラーが発生しました</span><br>
+                    <small style="display: block; margin-top: 10px; color: #666;">
+                        ${error.message || error}<br>
+                        LIFF ID: ${CONFIG.LIFF_ID}
+                    </small>`;
+                document.querySelector('.loader').style.display = 'none';
+                alert('エラーが発生しました: ' + (error.message || error));
+            }
+        }
+
+        init();
+    </script>
+</body>
+
+</html>
