@@ -247,12 +247,7 @@
 
     <script>
         const CONFIG = {
-            LIFF_ID: '2008895004-3ZGY5wPE',
-            SUPER_ADMINS: ['U80cae55bf31e8b90a6bb2aa9588ba1b7'],
-            ADMINS: {
-                i: ['U80cae55bf31e8b90a6bb2aa9588ba1b7'],
-                ro: []
-            }
+            LIFF_ID: '2008895004-3ZGY5wPE'
         };
 
         const TARGET_MAP = {
@@ -270,13 +265,6 @@
             const statusEl = document.getElementById('status');
             statusEl.textContent = message;
             statusEl.className = type ? `status ${type}` : 'status';
-        }
-
-        function isAdminForTarget(userId, target) {
-            if (!userId) return false;
-            if (CONFIG.SUPER_ADMINS.includes(userId)) return true;
-            if (target === 'all') return false;
-            return (CONFIG.ADMINS[target] || []).includes(userId);
         }
 
         async function initializeLiff() {
@@ -313,10 +301,6 @@
 
             if (!state.userId) {
                 showStatus('管理者確認が完了していません。', 'error');
-                return;
-            }
-            if (!isAdminForTarget(state.userId, target)) {
-                showStatus('配信権限がありません。管理者アカウントで実行してください。', 'error');
                 return;
             }
             if (!message) {
