@@ -5,7 +5,7 @@
    "query": "?g=i",
    "url": "file:///home/shi/workspace/DojoCalendar-LIFF/cal.html?g=i",
    "pageerrors": [],
-   "body_text": "尺八道場（い組） カレンダー登録\nカレンダーに追加\n\nボタンを押すとカレンダーアプリが開きます。\n\n.icsファイルを保存する\nパソコンで登録する場合のURL\n\nhttps://wganko.github.io/DojoCalendar-LIFF/i.ics",
+   "body_text": "尺八道場（い組） カレンダー登録\nカレンダーに追加\n\nボタンを押すとカレンダーアプリが開きます。\n\n.icsファイルをダウンロード\nパソコンで登録する場合のURL\n\nhttps://wganko.github.io/DojoCalendar-LIFF/i.ics",
    "heading": [
     "尺八道場（い組） カレンダー登録"
    ],
@@ -16,7 +16,7 @@
      "download": false
     },
     {
-     "text": ".icsファイルを保存する",
+     "text": ".icsファイルをダウンロード",
      "href": "https://wganko.github.io/DojoCalendar-LIFF/i.ics",
      "download": true
     }
@@ -38,7 +38,7 @@
    "query": "?g=ro",
    "url": "file:///home/shi/workspace/DojoCalendar-LIFF/cal.html?g=ro",
    "pageerrors": [],
-   "body_text": "尺八道場（ろ組） カレンダー登録\nカレンダーに追加\n\nボタンを押すとカレンダーアプリが開きます。\n\n.icsファイルを保存する\nパソコンで登録する場合のURL\n\nhttps://wganko.github.io/DojoCalendar-LIFF/ro.ics",
+   "body_text": "尺八道場（ろ組） カレンダー登録\nカレンダーに追加\n\nボタンを押すとカレンダーアプリが開きます。\n\n.icsファイルをダウンロード\nパソコンで登録する場合のURL\n\nhttps://wganko.github.io/DojoCalendar-LIFF/ro.ics",
    "heading": [
     "尺八道場（ろ組） カレンダー登録"
    ],
@@ -49,7 +49,7 @@
      "download": false
     },
     {
-     "text": ".icsファイルを保存する",
+     "text": ".icsファイルをダウンロード",
      "href": "https://wganko.github.io/DojoCalendar-LIFF/ro.ics",
      "download": true
     }
@@ -71,7 +71,7 @@
    "query": "?g=xxx",
    "url": "file:///home/shi/workspace/DojoCalendar-LIFF/cal.html?g=xxx",
    "pageerrors": [],
-   "body_text": "尺八道場（い組） カレンダー登録\nカレンダーに追加\n\nボタンを押すとカレンダーアプリが開きます。\n\n.icsファイルを保存する\nパソコンで登録する場合のURL\n\nhttps://wganko.github.io/DojoCalendar-LIFF/i.ics",
+   "body_text": "尺八道場（い組） カレンダー登録\nカレンダーに追加\n\nボタンを押すとカレンダーアプリが開きます。\n\n.icsファイルをダウンロード\nパソコンで登録する場合のURL\n\nhttps://wganko.github.io/DojoCalendar-LIFF/i.ics",
    "heading": [
     "尺八道場（い組） カレンダー登録"
    ],
@@ -82,7 +82,7 @@
      "download": false
     },
     {
-     "text": ".icsファイルを保存する",
+     "text": ".icsファイルをダウンロード",
      "href": "https://wganko.github.io/DojoCalendar-LIFF/i.ics",
      "download": true
     }
@@ -104,7 +104,7 @@
    "query": "(なし)",
    "url": "file:///home/shi/workspace/DojoCalendar-LIFF/cal.html",
    "pageerrors": [],
-   "body_text": "尺八道場（い組） カレンダー登録\nカレンダーに追加\n\nボタンを押すとカレンダーアプリが開きます。\n\n.icsファイルを保存する\nパソコンで登録する場合のURL\n\nhttps://wganko.github.io/DojoCalendar-LIFF/i.ics",
+   "body_text": "尺八道場（い組） カレンダー登録\nカレンダーに追加\n\nボタンを押すとカレンダーアプリが開きます。\n\n.icsファイルをダウンロード\nパソコンで登録する場合のURL\n\nhttps://wganko.github.io/DojoCalendar-LIFF/i.ics",
    "heading": [
     "尺八道場（い組） カレンダー登録"
    ],
@@ -115,7 +115,7 @@
      "download": false
     },
     {
-     "text": ".icsファイルを保存する",
+     "text": ".icsファイルをダウンロード",
      "href": "https://wganko.github.io/DojoCalendar-LIFF/i.ics",
      "download": true
     }
@@ -137,24 +137,18 @@
    "query": "?g=i",
    "url": "file:///home/shi/workspace/DojoCalendar-LIFF/cal.html?g=i",
    "pageerrors": [],
-   "body_text": "尺八道場（い組） カレンダー登録\n\nAndroidでは、このボタンでGoogleカレンダーアプリに予定を取り込めます。\n\nGoogleカレンダーで開く\n\nGoogleカレンダーアプリが開き、『予定を追加しますか？』と表示されたら追加を押してください。\n\n.icsファイルを保存する\n\nうまく開かない場合は保存してから、保存したファイルをタップして開いてください。\n\nパソコンで登録する場合のURL\n\nhttps://wganko.github.io/DojoCalendar-LIFF/i.ics",
+   "body_text": "尺八道場（い組） カレンダー登録\n\n下のボタンで予定ファイル（.ics）をダウンロードします。ダウンロードしたファイルをタップすると、カレンダーに追加できます。\n\n.icsファイルをダウンロード\n\nダウンロードが終わったら、画面に表示されるファイル（または『ファイル』アプリの『ダウンロード』）をタップし、『カレンダー』を選んでください。\n\nパソコンで登録する場合のURL\n\nhttps://wganko.github.io/DojoCalendar-LIFF/i.ics",
    "heading": [
     "尺八道場（い組） カレンダー登録"
    ],
    "buttons_in_order": [
     {
-     "text": "Googleカレンダーで開く",
-     "href": "https://wganko.github.io/DojoCalendar-LIFF/i.ics",
-     "download": false
-    },
-    {
-     "text": ".icsファイルを保存する",
+     "text": ".icsファイルをダウンロード",
      "href": "https://wganko.github.io/DojoCalendar-LIFF/i.ics",
      "download": true
     }
    ],
    "all_links": [
-    "https://wganko.github.io/DojoCalendar-LIFF/i.ics",
     "https://wganko.github.io/DojoCalendar-LIFF/i.ics"
    ],
    "h2": [
@@ -170,24 +164,18 @@
    "query": "?g=ro",
    "url": "file:///home/shi/workspace/DojoCalendar-LIFF/cal.html?g=ro",
    "pageerrors": [],
-   "body_text": "尺八道場（ろ組） カレンダー登録\n\nAndroidでは、このボタンでGoogleカレンダーアプリに予定を取り込めます。\n\nGoogleカレンダーで開く\n\nGoogleカレンダーアプリが開き、『予定を追加しますか？』と表示されたら追加を押してください。\n\n.icsファイルを保存する\n\nうまく開かない場合は保存してから、保存したファイルをタップして開いてください。\n\nパソコンで登録する場合のURL\n\nhttps://wganko.github.io/DojoCalendar-LIFF/ro.ics",
+   "body_text": "尺八道場（ろ組） カレンダー登録\n\n下のボタンで予定ファイル（.ics）をダウンロードします。ダウンロードしたファイルをタップすると、カレンダーに追加できます。\n\n.icsファイルをダウンロード\n\nダウンロードが終わったら、画面に表示されるファイル（または『ファイル』アプリの『ダウンロード』）をタップし、『カレンダー』を選んでください。\n\nパソコンで登録する場合のURL\n\nhttps://wganko.github.io/DojoCalendar-LIFF/ro.ics",
    "heading": [
     "尺八道場（ろ組） カレンダー登録"
    ],
    "buttons_in_order": [
     {
-     "text": "Googleカレンダーで開く",
-     "href": "https://wganko.github.io/DojoCalendar-LIFF/ro.ics",
-     "download": false
-    },
-    {
-     "text": ".icsファイルを保存する",
+     "text": ".icsファイルをダウンロード",
      "href": "https://wganko.github.io/DojoCalendar-LIFF/ro.ics",
      "download": true
     }
    ],
    "all_links": [
-    "https://wganko.github.io/DojoCalendar-LIFF/ro.ics",
     "https://wganko.github.io/DojoCalendar-LIFF/ro.ics"
    ],
    "h2": [
@@ -203,24 +191,18 @@
    "query": "?g=xxx",
    "url": "file:///home/shi/workspace/DojoCalendar-LIFF/cal.html?g=xxx",
    "pageerrors": [],
-   "body_text": "尺八道場（い組） カレンダー登録\n\nAndroidでは、このボタンでGoogleカレンダーアプリに予定を取り込めます。\n\nGoogleカレンダーで開く\n\nGoogleカレンダーアプリが開き、『予定を追加しますか？』と表示されたら追加を押してください。\n\n.icsファイルを保存する\n\nうまく開かない場合は保存してから、保存したファイルをタップして開いてください。\n\nパソコンで登録する場合のURL\n\nhttps://wganko.github.io/DojoCalendar-LIFF/i.ics",
+   "body_text": "尺八道場（い組） カレンダー登録\n\n下のボタンで予定ファイル（.ics）をダウンロードします。ダウンロードしたファイルをタップすると、カレンダーに追加できます。\n\n.icsファイルをダウンロード\n\nダウンロードが終わったら、画面に表示されるファイル（または『ファイル』アプリの『ダウンロード』）をタップし、『カレンダー』を選んでください。\n\nパソコンで登録する場合のURL\n\nhttps://wganko.github.io/DojoCalendar-LIFF/i.ics",
    "heading": [
     "尺八道場（い組） カレンダー登録"
    ],
    "buttons_in_order": [
     {
-     "text": "Googleカレンダーで開く",
-     "href": "https://wganko.github.io/DojoCalendar-LIFF/i.ics",
-     "download": false
-    },
-    {
-     "text": ".icsファイルを保存する",
+     "text": ".icsファイルをダウンロード",
      "href": "https://wganko.github.io/DojoCalendar-LIFF/i.ics",
      "download": true
     }
    ],
    "all_links": [
-    "https://wganko.github.io/DojoCalendar-LIFF/i.ics",
     "https://wganko.github.io/DojoCalendar-LIFF/i.ics"
    ],
    "h2": [
@@ -236,24 +218,18 @@
    "query": "(なし)",
    "url": "file:///home/shi/workspace/DojoCalendar-LIFF/cal.html",
    "pageerrors": [],
-   "body_text": "尺八道場（い組） カレンダー登録\n\nAndroidでは、このボタンでGoogleカレンダーアプリに予定を取り込めます。\n\nGoogleカレンダーで開く\n\nGoogleカレンダーアプリが開き、『予定を追加しますか？』と表示されたら追加を押してください。\n\n.icsファイルを保存する\n\nうまく開かない場合は保存してから、保存したファイルをタップして開いてください。\n\nパソコンで登録する場合のURL\n\nhttps://wganko.github.io/DojoCalendar-LIFF/i.ics",
+   "body_text": "尺八道場（い組） カレンダー登録\n\n下のボタンで予定ファイル（.ics）をダウンロードします。ダウンロードしたファイルをタップすると、カレンダーに追加できます。\n\n.icsファイルをダウンロード\n\nダウンロードが終わったら、画面に表示されるファイル（または『ファイル』アプリの『ダウンロード』）をタップし、『カレンダー』を選んでください。\n\nパソコンで登録する場合のURL\n\nhttps://wganko.github.io/DojoCalendar-LIFF/i.ics",
    "heading": [
     "尺八道場（い組） カレンダー登録"
    ],
    "buttons_in_order": [
     {
-     "text": "Googleカレンダーで開く",
-     "href": "https://wganko.github.io/DojoCalendar-LIFF/i.ics",
-     "download": false
-    },
-    {
-     "text": ".icsファイルを保存する",
+     "text": ".icsファイルをダウンロード",
      "href": "https://wganko.github.io/DojoCalendar-LIFF/i.ics",
      "download": true
     }
    ],
    "all_links": [
-    "https://wganko.github.io/DojoCalendar-LIFF/i.ics",
     "https://wganko.github.io/DojoCalendar-LIFF/i.ics"
    ],
    "h2": [
@@ -269,13 +245,13 @@
    "query": "?g=i",
    "url": "file:///home/shi/workspace/DojoCalendar-LIFF/cal.html?g=i",
    "pageerrors": [],
-   "body_text": "尺八道場（い組） カレンダー登録\nパソコンから登録する場合\nGoogleカレンダーをパソコンで開く\n左の「他のカレンダー」の + をクリック\n「URL で追加」を選ぶ\n上のURLを貼り付けて「カレンダーを追加」\n.icsファイルを保存する\n\nhttps://wganko.github.io/DojoCalendar-LIFF/i.ics",
+   "body_text": "尺八道場（い組） カレンダー登録\nパソコンから登録する場合\nGoogleカレンダーをパソコンで開く\n左の「他のカレンダー」の + をクリック\n「URL で追加」を選ぶ\n上のURLを貼り付けて「カレンダーを追加」\n.icsファイルをダウンロード\n\nhttps://wganko.github.io/DojoCalendar-LIFF/i.ics",
    "heading": [
     "尺八道場（い組） カレンダー登録"
    ],
    "buttons_in_order": [
     {
-     "text": ".icsファイルを保存する",
+     "text": ".icsファイルをダウンロード",
      "href": "https://wganko.github.io/DojoCalendar-LIFF/i.ics",
      "download": true
     }
@@ -296,13 +272,13 @@
    "query": "?g=ro",
    "url": "file:///home/shi/workspace/DojoCalendar-LIFF/cal.html?g=ro",
    "pageerrors": [],
-   "body_text": "尺八道場（ろ組） カレンダー登録\nパソコンから登録する場合\nGoogleカレンダーをパソコンで開く\n左の「他のカレンダー」の + をクリック\n「URL で追加」を選ぶ\n上のURLを貼り付けて「カレンダーを追加」\n.icsファイルを保存する\n\nhttps://wganko.github.io/DojoCalendar-LIFF/ro.ics",
+   "body_text": "尺八道場（ろ組） カレンダー登録\nパソコンから登録する場合\nGoogleカレンダーをパソコンで開く\n左の「他のカレンダー」の + をクリック\n「URL で追加」を選ぶ\n上のURLを貼り付けて「カレンダーを追加」\n.icsファイルをダウンロード\n\nhttps://wganko.github.io/DojoCalendar-LIFF/ro.ics",
    "heading": [
     "尺八道場（ろ組） カレンダー登録"
    ],
    "buttons_in_order": [
     {
-     "text": ".icsファイルを保存する",
+     "text": ".icsファイルをダウンロード",
      "href": "https://wganko.github.io/DojoCalendar-LIFF/ro.ics",
      "download": true
     }
@@ -323,13 +299,13 @@
    "query": "?g=xxx",
    "url": "file:///home/shi/workspace/DojoCalendar-LIFF/cal.html?g=xxx",
    "pageerrors": [],
-   "body_text": "尺八道場（い組） カレンダー登録\nパソコンから登録する場合\nGoogleカレンダーをパソコンで開く\n左の「他のカレンダー」の + をクリック\n「URL で追加」を選ぶ\n上のURLを貼り付けて「カレンダーを追加」\n.icsファイルを保存する\n\nhttps://wganko.github.io/DojoCalendar-LIFF/i.ics",
+   "body_text": "尺八道場（い組） カレンダー登録\nパソコンから登録する場合\nGoogleカレンダーをパソコンで開く\n左の「他のカレンダー」の + をクリック\n「URL で追加」を選ぶ\n上のURLを貼り付けて「カレンダーを追加」\n.icsファイルをダウンロード\n\nhttps://wganko.github.io/DojoCalendar-LIFF/i.ics",
    "heading": [
     "尺八道場（い組） カレンダー登録"
    ],
    "buttons_in_order": [
     {
-     "text": ".icsファイルを保存する",
+     "text": ".icsファイルをダウンロード",
      "href": "https://wganko.github.io/DojoCalendar-LIFF/i.ics",
      "download": true
     }
@@ -350,13 +326,13 @@
    "query": "(なし)",
    "url": "file:///home/shi/workspace/DojoCalendar-LIFF/cal.html",
    "pageerrors": [],
-   "body_text": "尺八道場（い組） カレンダー登録\nパソコンから登録する場合\nGoogleカレンダーをパソコンで開く\n左の「他のカレンダー」の + をクリック\n「URL で追加」を選ぶ\n上のURLを貼り付けて「カレンダーを追加」\n.icsファイルを保存する\n\nhttps://wganko.github.io/DojoCalendar-LIFF/i.ics",
+   "body_text": "尺八道場（い組） カレンダー登録\nパソコンから登録する場合\nGoogleカレンダーをパソコンで開く\n左の「他のカレンダー」の + をクリック\n「URL で追加」を選ぶ\n上のURLを貼り付けて「カレンダーを追加」\n.icsファイルをダウンロード\n\nhttps://wganko.github.io/DojoCalendar-LIFF/i.ics",
    "heading": [
     "尺八道場（い組） カレンダー登録"
    ],
    "buttons_in_order": [
     {
-     "text": ".icsファイルを保存する",
+     "text": ".icsファイルをダウンロード",
      "href": "https://wganko.github.io/DojoCalendar-LIFF/i.ics",
      "download": true
     }
@@ -377,24 +353,18 @@
    "query": "?g=i",
    "url": "file:///home/shi/workspace/DojoCalendar-LIFF/cal.html?g=i",
    "pageerrors": [],
-   "body_text": "LINEのアプリ内ではカレンダー登録ができません。\n右上のメニュー（iPhone: 共有ボタン / Android: ︙）から「ブラウザで開く」を選んでください。\n尺八道場（い組） カレンダー登録\n\nAndroidでは、このボタンでGoogleカレンダーアプリに予定を取り込めます。\n\nGoogleカレンダーで開く\n\nGoogleカレンダーアプリが開き、『予定を追加しますか？』と表示されたら追加を押してください。\n\n.icsファイルを保存する\n\nうまく開かない場合は保存してから、保存したファイルをタップして開いてください。\n\nパソコンで登録する場合のURL\n\nhttps://wganko.github.io/DojoCalendar-LIFF/i.ics",
+   "body_text": "LINEのアプリ内ではカレンダー登録ができません。\n右上のメニュー（iPhone: 共有ボタン / Android: ︙）から「ブラウザで開く」を選んでください。\n尺八道場（い組） カレンダー登録\n\n下のボタンで予定ファイル（.ics）をダウンロードします。ダウンロードしたファイルをタップすると、カレンダーに追加できます。\n\n.icsファイルをダウンロード\n\nダウンロードが終わったら、画面に表示されるファイル（または『ファイル』アプリの『ダウンロード』）をタップし、『カレンダー』を選んでください。\n\nパソコンで登録する場合のURL\n\nhttps://wganko.github.io/DojoCalendar-LIFF/i.ics",
    "heading": [
     "尺八道場（い組） カレンダー登録"
    ],
    "buttons_in_order": [
     {
-     "text": "Googleカレンダーで開く",
-     "href": "https://wganko.github.io/DojoCalendar-LIFF/i.ics",
-     "download": false
-    },
-    {
-     "text": ".icsファイルを保存する",
+     "text": ".icsファイルをダウンロード",
      "href": "https://wganko.github.io/DojoCalendar-LIFF/i.ics",
      "download": true
     }
    ],
    "all_links": [
-    "https://wganko.github.io/DojoCalendar-LIFF/i.ics",
     "https://wganko.github.io/DojoCalendar-LIFF/i.ics"
    ],
    "h2": [
@@ -410,24 +380,18 @@
    "query": "?g=ro",
    "url": "file:///home/shi/workspace/DojoCalendar-LIFF/cal.html?g=ro",
    "pageerrors": [],
-   "body_text": "LINEのアプリ内ではカレンダー登録ができません。\n右上のメニュー（iPhone: 共有ボタン / Android: ︙）から「ブラウザで開く」を選んでください。\n尺八道場（ろ組） カレンダー登録\n\nAndroidでは、このボタンでGoogleカレンダーアプリに予定を取り込めます。\n\nGoogleカレンダーで開く\n\nGoogleカレンダーアプリが開き、『予定を追加しますか？』と表示されたら追加を押してください。\n\n.icsファイルを保存する\n\nうまく開かない場合は保存してから、保存したファイルをタップして開いてください。\n\nパソコンで登録する場合のURL\n\nhttps://wganko.github.io/DojoCalendar-LIFF/ro.ics",
+   "body_text": "LINEのアプリ内ではカレンダー登録ができません。\n右上のメニュー（iPhone: 共有ボタン / Android: ︙）から「ブラウザで開く」を選んでください。\n尺八道場（ろ組） カレンダー登録\n\n下のボタンで予定ファイル（.ics）をダウンロードします。ダウンロードしたファイルをタップすると、カレンダーに追加できます。\n\n.icsファイルをダウンロード\n\nダウンロードが終わったら、画面に表示されるファイル（または『ファイル』アプリの『ダウンロード』）をタップし、『カレンダー』を選んでください。\n\nパソコンで登録する場合のURL\n\nhttps://wganko.github.io/DojoCalendar-LIFF/ro.ics",
    "heading": [
     "尺八道場（ろ組） カレンダー登録"
    ],
    "buttons_in_order": [
     {
-     "text": "Googleカレンダーで開く",
-     "href": "https://wganko.github.io/DojoCalendar-LIFF/ro.ics",
-     "download": false
-    },
-    {
-     "text": ".icsファイルを保存する",
+     "text": ".icsファイルをダウンロード",
      "href": "https://wganko.github.io/DojoCalendar-LIFF/ro.ics",
      "download": true
     }
    ],
    "all_links": [
-    "https://wganko.github.io/DojoCalendar-LIFF/ro.ics",
     "https://wganko.github.io/DojoCalendar-LIFF/ro.ics"
    ],
    "h2": [
@@ -443,24 +407,18 @@
    "query": "?g=xxx",
    "url": "file:///home/shi/workspace/DojoCalendar-LIFF/cal.html?g=xxx",
    "pageerrors": [],
-   "body_text": "LINEのアプリ内ではカレンダー登録ができません。\n右上のメニュー（iPhone: 共有ボタン / Android: ︙）から「ブラウザで開く」を選んでください。\n尺八道場（い組） カレンダー登録\n\nAndroidでは、このボタンでGoogleカレンダーアプリに予定を取り込めます。\n\nGoogleカレンダーで開く\n\nGoogleカレンダーアプリが開き、『予定を追加しますか？』と表示されたら追加を押してください。\n\n.icsファイルを保存する\n\nうまく開かない場合は保存してから、保存したファイルをタップして開いてください。\n\nパソコンで登録する場合のURL\n\nhttps://wganko.github.io/DojoCalendar-LIFF/i.ics",
+   "body_text": "LINEのアプリ内ではカレンダー登録ができません。\n右上のメニュー（iPhone: 共有ボタン / Android: ︙）から「ブラウザで開く」を選んでください。\n尺八道場（い組） カレンダー登録\n\n下のボタンで予定ファイル（.ics）をダウンロードします。ダウンロードしたファイルをタップすると、カレンダーに追加できます。\n\n.icsファイルをダウンロード\n\nダウンロードが終わったら、画面に表示されるファイル（または『ファイル』アプリの『ダウンロード』）をタップし、『カレンダー』を選んでください。\n\nパソコンで登録する場合のURL\n\nhttps://wganko.github.io/DojoCalendar-LIFF/i.ics",
    "heading": [
     "尺八道場（い組） カレンダー登録"
    ],
    "buttons_in_order": [
     {
-     "text": "Googleカレンダーで開く",
-     "href": "https://wganko.github.io/DojoCalendar-LIFF/i.ics",
-     "download": false
-    },
-    {
-     "text": ".icsファイルを保存する",
+     "text": ".icsファイルをダウンロード",
      "href": "https://wganko.github.io/DojoCalendar-LIFF/i.ics",
      "download": true
     }
    ],
    "all_links": [
-    "https://wganko.github.io/DojoCalendar-LIFF/i.ics",
     "https://wganko.github.io/DojoCalendar-LIFF/i.ics"
    ],
    "h2": [
@@ -476,24 +434,18 @@
    "query": "(なし)",
    "url": "file:///home/shi/workspace/DojoCalendar-LIFF/cal.html",
    "pageerrors": [],
-   "body_text": "LINEのアプリ内ではカレンダー登録ができません。\n右上のメニュー（iPhone: 共有ボタン / Android: ︙）から「ブラウザで開く」を選んでください。\n尺八道場（い組） カレンダー登録\n\nAndroidでは、このボタンでGoogleカレンダーアプリに予定を取り込めます。\n\nGoogleカレンダーで開く\n\nGoogleカレンダーアプリが開き、『予定を追加しますか？』と表示されたら追加を押してください。\n\n.icsファイルを保存する\n\nうまく開かない場合は保存してから、保存したファイルをタップして開いてください。\n\nパソコンで登録する場合のURL\n\nhttps://wganko.github.io/DojoCalendar-LIFF/i.ics",
+   "body_text": "LINEのアプリ内ではカレンダー登録ができません。\n右上のメニュー（iPhone: 共有ボタン / Android: ︙）から「ブラウザで開く」を選んでください。\n尺八道場（い組） カレンダー登録\n\n下のボタンで予定ファイル（.ics）をダウンロードします。ダウンロードしたファイルをタップすると、カレンダーに追加できます。\n\n.icsファイルをダウンロード\n\nダウンロードが終わったら、画面に表示されるファイル（または『ファイル』アプリの『ダウンロード』）をタップし、『カレンダー』を選んでください。\n\nパソコンで登録する場合のURL\n\nhttps://wganko.github.io/DojoCalendar-LIFF/i.ics",
    "heading": [
     "尺八道場（い組） カレンダー登録"
    ],
    "buttons_in_order": [
     {
-     "text": "Googleカレンダーで開く",
-     "href": "https://wganko.github.io/DojoCalendar-LIFF/i.ics",
-     "download": false
-    },
-    {
-     "text": ".icsファイルを保存する",
+     "text": ".icsファイルをダウンロード",
      "href": "https://wganko.github.io/DojoCalendar-LIFF/i.ics",
      "download": true
     }
    ],
    "all_links": [
-    "https://wganko.github.io/DojoCalendar-LIFF/i.ics",
     "https://wganko.github.io/DojoCalendar-LIFF/i.ics"
    ],
    "h2": [
@@ -507,10 +459,10 @@
  ],
  "fallback": {
   "pageerrors": [],
-  "body_text": "尺八道場（ろ組） カレンダー登録\n\n一部の案内を表示できませんでした。下記のURLから登録してください。\n\nパソコンで登録する場合のURL\n\nhttps://wganko.github.io/DojoCalendar-LIFF/ro.ics\n\n.icsファイルを保存する",
+  "body_text": "尺八道場（ろ組） カレンダー登録\n\n一部の案内を表示できませんでした。下記のURLから登録してください。\n\nパソコンで登録する場合のURL\n\nhttps://wganko.github.io/DojoCalendar-LIFF/ro.ics\n\n.icsファイルをダウンロード",
   "buttons_in_order": [
    {
-    "text": ".icsファイルを保存する",
+    "text": ".icsファイルをダウンロード",
     "href": "https://wganko.github.io/DojoCalendar-LIFF/ro.ics",
     "download": true
    }
@@ -522,14 +474,14 @@
   "pageerrors": [],
   "buttons_in_order": [
    {
-    "text": ".icsファイルをダウンロード",
+    "text": "Googleカレンダーで開く",
     "href": "https://wganko.github.io/DojoCalendar-LIFF/i.ics",
     "download": false
    },
    {
-    "text": "Googleカレンダーに追加",
-    "href": "https://calendar.google.com/calendar/r?cid=webcal://wganko.github.io/DojoCalendar-LIFF/i.ics",
-    "download": false
+    "text": ".icsファイルを保存する",
+    "href": "https://wganko.github.io/DojoCalendar-LIFF/i.ics",
+    "download": true
    }
   ]
  }

@@ -187,7 +187,7 @@
                 var link = make('a', {
                     className: 'btn',
                     href: icsUrl,
-                    text: '.icsファイルを保存する'
+                    text: '.icsファイルをダウンロード'
                 });
                 link.setAttribute('download', '');
                 add(card, link);
@@ -217,24 +217,15 @@
                 add(app, card);
                 renderHeading(card, group);
 
-                // Android：主ボタン（Googleカレンダーで開く）→ ヒント → 保存ボタン → ヒント → URL
+                // Android：説明文 → ダウンロードボタン → ヒント → URL
                 if (isAndroid) {
                     add(card, make('p', {
-                        text: 'Androidでは、このボタンでGoogleカレンダーアプリに予定を取り込めます。'
-                    }));
-                    add(card, make('a', {
-                        className: 'btn',
-                        href: icsUrl,
-                        text: 'Googleカレンダーで開く'
-                    }));
-                    add(card, make('p', {
-                        className: 'hint',
-                        text: 'Googleカレンダーアプリが開き、『予定を追加しますか？』と表示されたら追加を押してください。'
+                        text: '下のボタンで予定ファイル（.ics）をダウンロードします。ダウンロードしたファイルをタップすると、カレンダーに追加できます。'
                     }));
                     renderDownloadButton(card, icsUrl);
                     add(card, make('p', {
                         className: 'hint',
-                        text: 'うまく開かない場合は保存してから、保存したファイルをタップして開いてください。'
+                        text: 'ダウンロードが終わったら、画面に表示されるファイル（または『ファイル』アプリの『ダウンロード』）をタップし、『カレンダー』を選んでください。'
                     }));
                     renderUrlSection(card, icsUrl);
                 }
