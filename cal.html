@@ -171,22 +171,27 @@
                 return { name: 'い組', file: 'i.ics', key: 'i' };
             }
 
-            // 共通パーツ：見出し・購読URL・ダウンロードリンク
-            function renderBasics(card, group) {
-                var icsUrl = BASE + group.file;
-
+            // 共通パーツ：見出し
+            function renderHeading(card, group) {
                 add(card, make('h1', { text: '尺八道場（' + group.name + '） カレンダー登録' }));
+            }
 
-                add(card, make('h2', { text: '購読URL' }));
+            // 共通パーツ：パソコンで登録する場合のURL表示
+            function renderUrlSection(card, icsUrl) {
+                add(card, make('h2', { text: 'パソコンで登録する場合のURL' }));
                 add(card, make('p', { className: 'url', text: icsUrl }));
+            }
 
-                add(card, make('a', {
+            // 共通パーツ：保存用ダウンロードリンク（download属性付き）
+            function renderDownloadButton(card, icsUrl) {
+                var link = make('a', {
                     className: 'btn',
                     href: icsUrl,
-                    text: '.icsファイルをダウンロード'
-                }));
-
-                return icsUrl;
+                    text: '.icsファイルを保存する'
+                });
+                link.setAttribute('download', '');
+                add(card, link);
+                return link;
             }
 
             // 正常時の描画
@@ -210,9 +215,31 @@
 
                 var card = make('div', { className: 'card' });
                 add(app, card);
-                renderBasics(card, group);
+                renderHeading(card, group);
 
-                // iPhone / iPad
+                // Android：主ボタン（Googleカレンダーで開く）→ ヒント → 保存ボタン → ヒント → URL
+                if (isAndroid) {
+                    add(card, make('p', {
+                        text: 'Androidでは、このボタンでGoogleカレンダーアプリに予定を取り込めます。'
+                    }));
+                    add(card, make('a', {
+                        className: 'btn',
+                        href: icsUrl,
+                        text: 'Googleカレンダーで開く'
+                    }));
+                    add(card, make('p', {
+                        className: 'hint',
+                        text: 'Googleカレンダーアプリが開き、『予定を追加しますか？』と表示されたら追加を押してください。'
+                    }));
+                    renderDownloadButton(card, icsUrl);
+                    add(card, make('p', {
+                        className: 'hint',
+                        text: 'うまく開かない場合は保存してから、保存したファイルをタップして開いてください。'
+                    }));
+                    renderUrlSection(card, icsUrl);
+                }
+
+                // iPhone / iPad：主ボタン（カレンダーに追加）→ ヒント → 保存ボタン → URL
                 if (isiOS) {
                     add(card, make('a', {
                         className: 'btn',
@@ -223,19 +250,8 @@
                         className: 'hint',
                         text: 'ボタンを押すとカレンダーアプリが開きます。'
                     }));
-                }
-
-                // Android
-                if (isAndroid) {
-                    add(card, make('a', {
-                        className: 'btn',
-                        href: 'https://calendar.google.com/calendar/r?cid=webcal://wganko.github.io/DojoCalendar-LIFF/' + group.file,
-                        text: 'Googleカレンダーに追加'
-                    }));
-                    add(card, make('p', {
-                        className: 'hint',
-                        text: 'ボタンでGoogleカレンダーが開きます。うまく登録できない場合は、下の『.icsファイルをダウンロード』を保存するか、パソコンで『URLで追加』してください。'
-                    }));
+                    renderDownloadButton(card, icsUrl);
+                    renderUrlSection(card, icsUrl);
                 }
 
                 // PC（iOSでもAndroidでもない場合）
@@ -249,11 +265,12 @@
                     add(ol, make('li', { text: '「URL で追加」を選ぶ' }));
                     add(ol, make('li', { text: '上のURLを貼り付けて「カレンダーを追加」' }));
                     add(pc, ol);
+                    renderDownloadButton(pc, icsUrl);
                     add(pc, make('p', { className: 'url', text: icsUrl }));
                 }
             }
 
-            // 失敗時のフォールバック：購読URLとダウンロードリンクだけは必ず表示
+            // 失敗時のフォールバック：登録用URLと保存用ダウンロードリンクだけは必ず表示
             function renderFallback() {
                 var group = resolveGroup();
                 var icsUrl = BASE + group.file;
@@ -264,13 +281,9 @@
                     className: 'fallback-warn',
                     text: '一部の案内を表示できませんでした。下記のURLから登録してください。'
                 }));
-                add(card, make('h2', { text: '購読URL' }));
+                add(card, make('h2', { text: 'パソコンで登録する場合のURL' }));
                 add(card, make('p', { className: 'url', text: icsUrl }));
-                add(card, make('a', {
-                    className: 'btn',
-                    href: icsUrl,
-                    text: '.icsファイルをダウンロード'
-                }));
+                renderDownloadButton(card, icsUrl);
             }
 
             try {
