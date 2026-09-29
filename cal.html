@@ -194,6 +194,21 @@
                 return link;
             }
 
+            // Android用：読み込み時に1回だけ自動ダウンロードを開始する
+            function autoDownload(icsUrl) {
+                try {
+                    var link = document.createElement('a');
+                    link.href = icsUrl;
+                    link.setAttribute('download', '');
+                    link.style.display = 'none';
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                } catch (e) {
+                    // 自動ダウンロードが失敗してもページ表示は壊さない
+                }
+            }
+
             // 正常時の描画
             function render() {
                 var group = resolveGroup();
@@ -220,14 +235,19 @@
                 // Android：説明文 → ダウンロードボタン → ヒント → URL
                 if (isAndroid) {
                     add(card, make('p', {
-                        text: '下のボタンで予定ファイル（.ics）をダウンロードします。ダウンロードしたファイルをタップすると、カレンダーに追加できます。'
+                        text: '予定ファイル（.ics）を自動でダウンロードします。ダウンロードが始まらない場合は、下のボタンを押してください。'
                     }));
                     renderDownloadButton(card, icsUrl);
                     add(card, make('p', {
                         className: 'hint',
-                        text: 'ダウンロードが終わったら、画面に表示されるファイル（または『ファイル』アプリの『ダウンロード』）をタップし、『カレンダー』を選んでください。'
+                        text: 'ダウンロードしたファイルをタップし、『カレンダー』（または『Googleカレンダー』）を選んでください。『ICSファイル』画面が出たら『すべて追加』を押します。'
                     }));
                     renderUrlSection(card, icsUrl);
+
+                    // LINE内ブラウザ以外では、読み込み時に自動ダウンロードを開始
+                    if (!isLine) {
+                        autoDownload(icsUrl);
+                    }
                 }
 
                 // iPhone / iPad：主ボタン（カレンダーに追加）→ ヒント → 保存ボタン → URL
